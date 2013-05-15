@@ -126,7 +126,7 @@ class Articles extends Controller
 	
 		//prepare active record for new query (with limit/offeset/orderby)
 		$this->db->distinct();
-		$this->db->select('articles.article_id, article_uri, article_title, article_display, article_date, article_hits');
+		$this->db->select('articles.article_id, article_uri, article_title, article_display, article_date, article_modified, article_hits');
 		$this->db->from("articles");
 		$this->db->join('article2cat', 'articles.article_id = article2cat.article_id', 'left');
 		//modification for management module add site_id search
@@ -176,7 +176,7 @@ class Articles extends Controller
 		$segment_array = $this->uri->segment_array();
 		$segment_count = $this->uri->total_segments();
 		
-		$allowed = array('article_id','article_uri', 'article_title', 'article_display', 'a_hits', 'article_date');
+		$allowed = array('article_id','article_uri', 'article_title', 'article_display', 'a_hits', 'article_date', 'article_modified');
 		 
 		//segments
 		$do_orderby = array_search("orderby",$segment_array);
@@ -189,7 +189,7 @@ class Articles extends Controller
 			$orderby = $this->uri->segment($do_orderby+1);
 			if( ! in_array( trim ( $orderby ), $allowed )) 
 			{
-				$orderby = 'article_id';	
+				$orderby = 'article_modified';	
 			}
 			$this->db->order_by($orderby, $this->uri->segment($do_orderby+2));
 		} 
