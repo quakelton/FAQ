@@ -49,6 +49,7 @@
 	$lang['kb_date_added'] = 'Fecha de Creación';
 	$lang['kb_attachment'] = 'Adjuntar Archivo';
 	$lang['kb_attachments'] = 'Archivos Adjuntos';
+	$lang['kb_date_modified'] = 'Última actualización';
 	$lang['kb_last_updated'] = 'Última actualización';
 	$lang['kb_attachment_add'] = 'Después de que guarde este artículo usted podrá adjuntar archivos.';
 	$lang['kb_upload'] = 'Subir';
