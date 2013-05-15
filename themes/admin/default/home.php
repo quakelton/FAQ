@@ -60,21 +60,6 @@
 							</table>
 					</form>
 				</td>
-				<td width="58%" valign="top">
-					
-					
-					<table width="100%"  border="0" cellpadding="3" cellspacing="0" class="modules">
-							<tr>
-								<td class="moduleslinks" align="left"><strong><?php echo lang('kb_latest_news'); ?></strong></td>
-							</tr>
-							<tr>
-								<td>
-									<div id="rssnews"><img src="<?php echo base_url();?>images/ajax-loader.gif" alt="Loading" /> <?php echo lang('kb_loading'); ?></div>
-								</td>
-							</tr>
-					</table>
-					
-				</td>
 			</tr>
 		</table>
 
