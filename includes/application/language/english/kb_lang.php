@@ -48,6 +48,7 @@
 	$lang['kb_status'] = 'Status';
 	$lang['kb_short_description'] = 'Short Description';
 	$lang['kb_date_added'] = 'Date Added';
+	$lang['kb_date_modified'] = 'Last Updated';
 	$lang['kb_last_updated'] = 'Last updated on';
 	$lang['kb_attachment'] = 'Add Attachment';
 	$lang['kb_attachments'] = 'Attachments';
