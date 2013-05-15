@@ -102,6 +102,21 @@
 						<?php endif; ?>
 						<?php echo lang('kb_date_added'); ?>
 						</a>
+				</th
+				<th width="14%">
+					<?php 
+						$class='';					
+						if(isset($orderby) && isset($opp) && $orderby=="article_modified") {
+							$class = $opp;
+						}
+					?>
+						<?php if(isset($sort) && $sort == 'desc'): ?>
+						<a href="<?php echo site_url('admin/articles/grid/orderby/article_modified/asc'); ?>" class="<?php echo $class; ?>">
+						<?php else: ?>
+						<a href="<?php echo site_url('admin/articles/grid/orderby/article_modified/desc'); ?>" class="<?php echo $class; ?>">
+						<?php endif; ?>
+						<?php echo lang('kb_date_modified'); ?>
+						</a>
 				</th>
 				<th>
 					<?php 
@@ -152,6 +167,7 @@
 					<?php endif; ?>
 				</td>
 				<td class=""><?php echo date($this->config->item('article_date_format'), $item['article_date']); ?></td>
+				<td class=""><?php echo date($this->config->item('article_date_format'), $item['article_modified']); ?></td>
 				<td><?php echo $item['article_hits']; ?></td>
 				<td>
 					<?php
@@ -163,9 +179,9 @@
 					?>
 				</td>
 				<?php $site = $this->core_events->trigger('show_siteinfo_on_articles', $item['article_id']); ?>
-				<?php if($site !== NULL){ 
+				<?php /*if($site !== NULL){ 
 				echo '<td>'.$site.'</td>';
-				} ?>
+				} */ ?>
 				<td width="10%" nowrap="nowrap">
 					<a href="
 					<?php if($site !== NULL){ 
