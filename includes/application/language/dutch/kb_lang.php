@@ -48,6 +48,7 @@
 	$lang['kb_status'] = 'Status';
 	$lang['kb_short_description'] = 'Korte beschrijving';
 	$lang['kb_date_added'] = 'Datum toegevoegd';
+	$lang['kb_date_modified'] = 'Laatst aangepast';
 	$lang['kb_last_updated'] = 'Voor het laatst aangepast op';
 	$lang['kb_attachment'] = 'Voeg bijlage toe';
 	$lang['kb_attachments'] = 'Bijlages';
