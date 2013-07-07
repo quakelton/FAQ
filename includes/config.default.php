@@ -45,7 +45,7 @@ $db['default']['dbcollat'] = "utf8_general_ci";
 | http://codeigniter.com/forums/viewthread/60181/
 */
 //$config['base_url']	= "http://localhost/";
-$config['base_url'] = "http://".$_SERVER['HTTP_HOST'];
+$config['base_url'] = "//".$_SERVER['HTTP_HOST'];
 $config['base_url'] .= preg_replace('@/+$@','',dirname($_SERVER['SCRIPT_NAME'])).'/';
 
 /*
