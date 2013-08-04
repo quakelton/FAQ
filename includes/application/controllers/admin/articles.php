@@ -176,7 +176,7 @@ class Articles extends Controller
 		$segment_array = $this->uri->segment_array();
 		$segment_count = $this->uri->total_segments();
 		
-		$allowed = array('article_id','article_uri', 'article_title', 'article_display', 'a_hits', 'article_date', 'article_modified');
+		$allowed = array('article_id','article_uri', 'article_title', 'article_display', 'article_hits', 'article_date', 'article_modified');
 		 
 		//segments
 		$do_orderby = array_search("orderby",$segment_array);
