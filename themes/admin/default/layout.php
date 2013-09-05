@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $this->config->item('charset');?>" />
 <title>68 KB Administration</title>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/tooltip.js"></script>
 <link href="<?php echo base_url();?>themes/admin/default/style/default.css" rel="stylesheet" type="text/css" />
 <meta http-equiv="pragma" content="no-cache" />
