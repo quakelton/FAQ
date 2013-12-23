@@ -42,6 +42,7 @@
 		</p>
 		<p class="row1">
 			<label for="userfile"><?php echo lang('kb_attachment'); ?>:</label>
+			<i><?php echo lang('kb_attachment_add'); ?></i><br />
 			<input tabindex="9" type="file" id="userfile" name="userfile" size="20" />
 			<input type="submit" tabindex="11" name="save" class="save" value="<?php echo lang('kb_upload_and_continue'); ?>" />
 		</p>
