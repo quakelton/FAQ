@@ -54,6 +54,7 @@
 	$lang['kb_attachments'] = 'Attachments';
 	$lang['kb_attachment_add'] = 'After you save this article you can add attachments';
 	$lang['kb_upload'] = 'Upload';
+	$lang['kb_upload_and_continue'] = 'Upload and Continue';
 	$lang['kb_show'] = 'Show';
 	$lang['kb_article_weight_desc'] = 'All articles are sorted alphabetically but you can override this by using a weight.  The higher the weight the sooner the article will appear.';
 	$lang['kb_most_popular'] = 'Most Popular';
